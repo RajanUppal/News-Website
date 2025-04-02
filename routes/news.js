@@ -10,7 +10,7 @@ newsr.get('/',async(req,res)=>{
     try {
         var url = 'http://newsapi.org/v2/top-headlines?' +
           'country=in&' +
-          'apiKey=36f3e29b704f41339af8439dc1228334';
+          'apiKey=ed8a65a898c148e8897505183e1e22bd';
 
         const news_get =await axios.get(url)
         res.render('news',{articles:news_get.data.articles})
